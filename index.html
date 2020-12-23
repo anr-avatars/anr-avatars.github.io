@@ -138,23 +138,40 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">ANR: Articulated Neural Rendering for Virtual Avatars</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Amit Raj</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
+							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Julian Tanke</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
+							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">James Hays</a></span>
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Minh Vo</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Carsten Stoll</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Christoph Lassner</a></span>
 						</center>
 					</td>
 				</tr>
@@ -166,9 +183,9 @@
 							<span style="font-size:24px"><a href=''>[Paper]</a></span>
 						</center>
 					</td>
-					<td align=center width=120px>
+					<!--<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>-->
 						</center>
 					</td>
 				</tr>
@@ -181,18 +198,18 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:900px" src="./resources/timelapse-v5.png"/>
 					</center>
 				</td>
 			</tr>
 		</table>
-		<table align=center width=850px>
+		<!--<table align=center width=850px>
 			<tr>
 				<td>
 					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
 				</td>
 			</tr>
-		</table>
+		</table>-->
 	</center>
 
 	<hr>
@@ -201,19 +218,30 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				The combination of traditional rendering with neural
+				networks in Deferred Neural Rendering (DNR) [37] provides a compelling balance between computational complexity and realism of the resulting images. Using skinned
+				meshes for rendering articulating objects is a natural extension for the DNR framework and would open it up to a
+				plethora of applications. However, in this case the neural
+				shading step must account for deformations that are possibly not captured in the mesh, as well as alignment inaccuracies and dynamics—which can confound the DNR
+				pipeline. We present Articulated Neural Rendering (ANR), a
+				novel framework based on DNR which explicitly addresses
+				its limitations for virtual human avatars. We show the superiority of ANR not only with respect to DNR but also
+				with methods specialized for avatar creation and animation. In two user studies, we observe a clear preference
+				for our avatar model and we demonstrate state-of-the-art
+				performance on quantitative evaluation metrics. Perceptually, we observe better temporal stability, level of detail and
+				plausibility. 
 			</td>
 		</tr>
 	</table>
 	<br>
 
 	<hr>
-	<center><h1>Talk</h1></center>
+	<!--<center><h1>Video</h1></center>
 	<p align="center">
 		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
-	</p>
+	</p>-->
 
-	<table align=center width=800px>
+	<!--<table align=center width=800px>
 		<br>
 		<tr>
 			<center>
@@ -221,10 +249,10 @@
 				</span>
 			</center>
 		</tr>
-	</table>
+	</table>-->
 	<hr>
 
-	<center><h1>Code</h1></center>
+	<center><h1>Approach</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -238,12 +266,52 @@
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
+					<td><img class="round" style="width:800px" src="./resources/fig-framework.png"/></td>
 				</center>
 			</td>
 		</tr>
 	</table>
-	<table align=center width=850px>
+
+	<center><h1>Avatars</h1></center>
+
+	<table align=center width=420px>
+		<center>
+			<tr>
+				<td>
+				</td>
+			</tr>
+		</center>
+	</table>
+	<table align=center width=400px>
+		<tr>
+			<td align=center width=400px>
+				<center>
+					<td><img class="round" style="width:800px" src="./resources/retargetting_figure_transparent-v3.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+
+	<center><h1>Cloth Swapping</h1></center>
+
+	<table align=center width=420px>
+		<center>
+			<tr>
+				<td>
+				</td>
+			</tr>
+		</center>
+	</table>
+	<table align=center width=400px>
+		<tr>
+			<td align=center width=400px>
+				<center>
+					<td><img class="round" style="width:800px" src="./resources/texture_mixing.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<!--<table align=center width=850px>
 		<center>
 			<tr>
 				<td>
@@ -258,16 +326,15 @@
 			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
 			</center>
 		</span>
-	</table>
+	</table>-->
 	<br>
 	<hr>
 	<table align=center width=450px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
-				<b>Creative and Descriptive Paper Title.</b><br>
-				In Conference, 20XX.<br>
+			<td><span style="font-size:14pt">Amit Raj, Julian Tanke, James Hays, Minh Vo, Carsten Stoll, Christoph Lassner.<br>
+				<b>ANR-Articulated Neural Rendering for Virtual Avatars</b><br>
 				(hosted on <a href="">ArXiv</a>)<br>
 				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
 				<span style="font-size:4pt"><a href=""><br></a>
@@ -293,7 +360,7 @@
 			<td width=400px>
 				<left>
 					<center><h1>Acknowledgements</h1></center>
-					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project
 				</left>
 			</td>
 		</tr>
